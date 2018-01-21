@@ -50,3 +50,20 @@ $("#game_name").change(function(){
 		}
 	}
 });
+
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
+$("#increasing_sort").click(function() {
+	var data = $(".game-item");
+	var games_list = $("#games_list");
+	// var search_keyword = $(this).val();
+	games_list.empty();
+	var sorred_data = sortByKey(games_api_data, "score");
+	populate_data(sorred_data);
+});

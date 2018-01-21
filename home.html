@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Online Games Search</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="COGPORT challenge">
+	    <meta name="author" content="Harshit Garg">
+		<link rel="stylesheet" type="text/css" href="./static/bootstrap-3.3.7-dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/custom.css">
+		<script type="text/javascript" src=""></script>
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">COGOPORT Games</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#">About</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+		<div>
+			<div calss="row" style="margin: 10px;">
+				<div class="form-control-group col-md-12">
+					<datalist id="games_data_list"></datalist>
+					<div>
+						<input class="form-control" type="text" id="game_name" name="game_name" list="games_data_list" style="height: 50px; font-size: 30px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>			
+			<div class="row" id="games_list" style="margin: 10px;">
+			</div>
+		</div>
+		<script type="text/javascript" src="./static/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./static/js/fetch_and_display.js"></script>
+	</body>
+</html>

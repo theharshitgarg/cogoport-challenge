@@ -1,0 +1,17 @@
+.top-header {
+	margin: 0px;
+	background-color: #AA0044;
+	height: 10%;
+	color: #FFFFFF;
+	font-size: 12;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      /*background-color: #AA0044;*/
+      /*color: #FFFFFF;*/
+    }
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}

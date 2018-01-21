@@ -64,6 +64,20 @@ $("#increasing_sort").click(function() {
 	var games_list = $("#games_list");
 	// var search_keyword = $(this).val();
 	games_list.empty();
-	var sorred_data = sortByKey(games_api_data, "score");
-	populate_data(sorred_data);
+	var sorted_data = sortByKey(games_api_data, "score");
+	populate_data(sorted_data);
+});
+
+
+$("#decreasing_sort").click(function() {
+	var data = $(".game-item");
+	var games_list = $("#games_list");
+	// var search_keyword = $(this).val();
+	games_list.empty();
+	var sorted_data = sortByKey(games_api_data, "score");
+	var data = [];
+	for(var counter = 0; counter < sorted_data.length; counter++){
+		data.push(sorted_data[sorted_data.length-1-counter]);	
+	}
+	populate_data(data);
 });
